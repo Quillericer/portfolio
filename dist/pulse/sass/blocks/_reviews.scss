@@ -1,0 +1,38 @@
+.reviews {
+    min-height: 950px;
+    margin-bottom: 71px;
+    hr {
+        background-color: #f6f6f6;
+        margin-top: 48px;
+        margin-bottom: 53px;
+        border-bottom: none;
+    }
+    &__people {
+        margin-top: 70px;
+        display: flex;
+        img {
+            width: 169px;
+            height: 169px;
+        }
+    }
+    &__item {
+        margin-left: 62px;
+    }
+    &__name {
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__marafon {
+        margin-top: 10px;
+        color: #646464;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    &__comments {
+        margin-top: 19px;
+        color: #0d0d0d;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}

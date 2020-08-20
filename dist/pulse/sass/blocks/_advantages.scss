@@ -1,0 +1,44 @@
+.advantages {
+    min-height: 470px;
+    padding: 70px 0 78px 0;
+    background: url("../images/bg/bgwhite.jpg") center (center/cover) no-repeat;
+    &__title {
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__subtitle {
+        margin-top: 26px;
+        color: #0d0d0d;
+        font-size: 14px;
+        font-weight: 300;
+        span {
+            color: #ff0000;
+            text-decoration: underline;
+        }
+    }
+    &__items {
+        margin-top: 65px;
+        display: flex;
+        width: 925px;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 247px;
+        text-align: center;
+        color: #0d0d0d;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__icon {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 38px;
+        &_animated {
+            animation: heartbeat 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+}
