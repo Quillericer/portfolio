@@ -1,42 +1,42 @@
 .price {
-    padding-top: 60px;
-    &__wrapper {
-        padding: 60px 50px 0 50px;
-        display: grid;
-        grid-template-columns: repeat(2, 365px);
-        grid-template-rows: repeat(3, 45px);
-        column-gap: 305px;
-        row-gap: 15px;
-        justify-content: space-between;
+  padding-top: 60px;
+  &__wrapper {
+    padding: 60px 50px 0 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 365px);
+    grid-template-rows: repeat(2, 45px);
+    // column-gap: 305px;
+    row-gap: 15px;
+    justify-content: space-around;
+  }
+  &__item {
+    padding-left: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(105px, auto));
+    grid-template-rows: repeat(2, minmax(20px, auto));
+    justify-content: space-between;
+    align-content: space-between;
+    &-name {
+      position: relative;
+      &:before {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        background: $main-color;
+        border-radius: 100%;
+        left: -25px;
+        top: 3px;
+      }
     }
-    &__item {
-        padding-left: 25px;
-        display: grid;
-        grid-template-columns: repeat(2, minmax(105px, auto));
-        grid-template-rows: repeat(2, minmax(20px, auto));
-        justify-content: space-between;
-        align-content: space-between;
-        &-name {
-            position: relative;
-            &:before {
-                position: absolute;
-                content: '';
-                width: 15px;
-                height: 15px;
-                background: $main-color;
-                border-radius: 100%;
-                left: -25px;
-                top: 3px;
-            }
-        }
-        &-descr {
-            font-size: 12px;
-            line-height: 18px;
-            grid-column: 1 / 3;
-            grid-row: 2;
-        }
-        &-price {
-            justify-self: flex-end;
-        }
+    &-descr {
+      font-size: 12px;
+      line-height: 18px;
+      grid-column: 1 / 3;
+      grid-row: 2;
     }
+    &-price {
+      justify-self: flex-end;
+    }
+  }
 }
