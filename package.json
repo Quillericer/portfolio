@@ -1,12 +1,12 @@
 {
-  "name": "pulse",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "my portfolio",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "George",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.12",
@@ -24,5 +24,16 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quillericer/portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "bugs": {
+    "url": "https://github.com/Quillericer/portfolio/issues"
+  },
+  "homepage": "https://github.com/Quillericer/portfolio#readme"
 }

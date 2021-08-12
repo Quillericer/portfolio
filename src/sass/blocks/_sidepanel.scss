@@ -1,35 +1,43 @@
 .sidepanel {
-    position: fixed;
-    top: 230px;
-    left: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 340px;
-    z-index: 3;
-    &__link {
-        &:hover {
-            svg path {
-                fill: $main-color;
-                transition: 0.3s;
-            }
-        }
+  position: fixed;
+  top: 230px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 340px;
+  z-index: 3;
+  &__link {
+    .fab {
+      color: black;
+      transform: rotate(-90deg);
+      &:hover {
+        color: $main-color;
+        transition: 0.3s;
+      }
     }
-    &__divider {
-        width: 2px;
-        height: 70px;
-        background-color: #000;
+    &:hover {
+      svg path {
+        fill: $main-color;
+        transition: 0.3s;
+      }
     }
-    &__text {
-        margin-top: 15px;
-        height: 150px;
-        width: 25px;
-        span {
-            display: block;
-            transform: rotate(-90deg) translate(-30%, -260%);
-            width: 150px;
-            font-weight: bold;
-        }
+  }
+  &__divider {
+    width: 2px;
+    height: 70px;
+    background-color: #000;
+  }
+  &__text {
+    margin-top: 15px;
+    height: 150px;
+    width: 25px;
+    span {
+      display: block;
+      transform: rotate(-90deg) translate(-30%, -260%);
+      width: 150px;
+      font-weight: bold;
     }
+  }
 }
