@@ -1,5 +1,5 @@
 .resume {
-  padding-top: 120px;
+  padding-top: 90px;
   &__wrapper {
     padding: 60px 65px 0 65px;
     display: grid;
@@ -62,9 +62,12 @@
       line-height: 18px;
       a {
         text-decoration: none;
-        background: linear-gradient(135deg, #12bcb0 20%, #fabe0e 70%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: #000;
+        font-weight: bold;
+        &:hover {
+          color: $main-color;
+          transition: 0.3s;
+        }
       }
     }
     &-icon {

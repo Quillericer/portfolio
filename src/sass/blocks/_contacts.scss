@@ -1,5 +1,5 @@
 .contacts {
-  padding: 120px 0 90px 0;
+  padding: 90px 0 90px 0;
   &__wrapper {
     padding: 0 35px 0 52px;
     display: grid;
@@ -36,6 +36,12 @@
   }
   &__link {
     margin-right: 25px;
+    i {
+      &:hover {
+        color: $main-color;
+        transition: 0.3s;
+      }
+    }
   }
   &__form {
     margin-top: 30px;
@@ -102,6 +108,10 @@
         text-decoration: none;
         color: #000;
         font-weight: bold;
+        &:hover {
+          color: $main-color;
+          transition: 0.3s;
+        }
       }
     }
   }

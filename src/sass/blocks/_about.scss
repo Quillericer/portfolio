@@ -68,7 +68,7 @@
 // }
 
 .about {
-  padding-top: 120px;
+  padding-top: 90px;
   &__wrapper {
     display: grid;
     grid-template-columns: 400px 670px;
@@ -101,6 +101,7 @@
     margin-top: 20px;
     font-size: 14px;
     line-height: 21px;
+    font-weight: 700;
   }
   &__skills {
     display: grid;

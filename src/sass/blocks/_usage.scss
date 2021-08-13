@@ -1,67 +1,67 @@
 .usage {
-    padding-top: 120px;
-    &__wrapper {
-        margin-top: 60px;
-        display: grid;
-        grid-template-columns: repeat(4, 270px);
-        grid-template-rows: repeat(2, 270px);
-        grid-auto-columns: 270px;
-        gap: 13px;
+  padding-top: 90px;
+  &__wrapper {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    grid-template-rows: repeat(2, 270px);
+    grid-auto-columns: 270px;
+    gap: 13px;
+  }
+  &__item {
+    padding: 30px 30px 25px 30px;
+    border: 1px solid #000;
+    &-title {
+      margin-top: 20px;
     }
-    &__item {
-        padding: 30px 30px 25px 30px;
-        border: 1px solid #000;
-        &-title {
-            margin-top: 20px;
-        }
-        &-descr {
-            margin-top: 15px;
-            font-size: 12px;
-            line-height: 18px;
-        }
-        &-photo {
-            height: 65px;
-            display: flex;
-        }
+    &-descr {
+      margin-top: 15px;
+      font-size: 12px;
+      line-height: 18px;
     }
+    &-photo {
+      height: 65px;
+      display: flex;
+    }
+  }
 }
 
 .statistic {
-    padding-top: 120px;
-    &__wrapper {
-        position: relative;
-        display: grid;
-        grid-template-columns: repeat(3, 350px);
-        grid-template-rows: repeat(2, minmax(70px, auto));
-        column-gap: 45px;
-        row-gap: 30px;
+  padding-top: 90px;
+  &__wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, minmax(70px, auto));
+    column-gap: 45px;
+    row-gap: 30px;
+  }
+  &__item {
+    display: grid;
+    grid-template: minmax(21px, auto) 14px / 200px 35px;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  &__title {
+    position: relative;
+    padding: 2px 0 0 13px;
+    @include before_circle;
+  }
+  &__percent {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  &__line {
+    width: 350px;
+    height: 14px;
+    background-color: #e8e4de;
+    border-radius: 4px;
+    grid-column: 1 / 3;
+    span {
+      display: block;
+      height: 100%;
+      background-color: $main-color;
+      border-radius: 4px;
     }
-    &__item {
-        display: grid;
-        grid-template: minmax(21px, auto) 14px / 200px 35px;
-        justify-content: space-between;
-        align-content: space-between;
-    }
-    &__title {
-        position: relative;
-        padding: 2px 0 0 13px;
-        @include before_circle;
-    }
-    &__percent {
-        font-size: 14px;
-        line-height: 21px;
-    }
-    &__line {
-        width: 350px;
-        height: 14px;
-        background-color: #E8E4DE;
-        border-radius: 4px;
-        grid-column: 1 / 3;
-        span {
-            display: block;
-            height: 100%;
-            background-color: $main-color;
-            border-radius: 4px;
-        }
-    }
+  }
 }
