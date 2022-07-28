@@ -3,7 +3,10 @@ const hamburger = document.querySelector(".hamburger"),
   closeElem = menu.querySelector(".menu__close"),
   menuOverlay = menu.querySelector(".menu__overlay"),
   percent = document.querySelectorAll(".statistic__percent"),
-  lines = document.querySelectorAll(".statistic__line span");
+  lines = document.querySelectorAll(".statistic__line span"),
+  btn = document.querySelector("button"),
+  form = document.querySelector("form");
+
 
 hamburger.addEventListener("click", showHamburger);
 
@@ -30,3 +33,34 @@ document.addEventListener("keydown", (e) => {
     hideHamburger();
   }
 });
+
+const postData = async (url, data) => {
+  const res = await fetch(url, {
+      method: "POST",
+      headers: {
+          "Content-Type": "application/json",
+      },
+      body: data,
+  });
+  return await res.json();
+};
+
+
+
+function bindPostData(item) {
+  item.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const formData = new FormData(item);
+    const toJSON = JSON.stringify(Object.fromEntries(formData.entries()));
+    postData("http://localhost:3000/requests", toJSON)
+      .then((data) => {
+        console.log(data, "Данные получены");
+      })
+      .catch(() => {
+        console.log("Произошла ошибка");
+      })
+  
+  });
+}
+
+bindPostData(form);
