@@ -54,7 +54,7 @@ function bindPostData(item) {
     const toJSON = JSON.stringify(Object.fromEntries(formData.entries()));
     postData("http://localhost:3000/requests", toJSON)
       .then((data) => {
-        console.log(data, "Данные получены");
+        console.log(data, 'Данные отправлены успешно')
       })
       .catch(() => {
         console.log("Произошла ошибка");

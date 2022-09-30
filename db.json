@@ -1,34 +1,5 @@
 {
   "requests": [
-    {
-      "id": 1
-    },
-    {
-      "id": 2
-    },
-    {
-      "name": "Георгий",
-      "email": "kositskiy2003@mail.ru",
-      "text": "wasd",
-      "id": 3
-    },
-    {
-      "name": "Александр",
-      "email": "shindyapin@gmail.com",
-      "text": "Добрый день, скоро я с вами свяжусь по поводу создания сайта",
-      "id": 4
-    },
-    {
-      "name": "Виталий",
-      "email": "vitaliyslonov@mail.ru",
-      "text": "Я готов с вами сотрудничать",
-      "id": 5
-    },
-    {
-      "name": "Георгий",
-      "email": "kositskiy2003@mail.ru",
-      "text": "wsad",
-      "id": 6
-    }
+    
   ]
 }
